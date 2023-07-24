@@ -1,0 +1,56 @@
+- Challenges with Element Identification:
+
+    The web store's structural problems make it difficult to define reliable targets for element
+    identification using common locators like IDs, XPaths, or CSS selectors. This can result in
+    test flakiness and maintenance issues since tests may fail intermittently due to changes in
+    the element locators.
+
+- Unpredictable Changes:
+
+    The tight coupling of the test automation framework with the volatile web store structure
+    leads to frequent and unpredictable changes in the automation code. With every change in
+    the application's UI, test scripts may require updates, resulting in higher maintenance
+    efforts and a potential decrease in testing efficiency.
+
+- Brittle Test Automation:
+
+    Due to the difficulty in identifying elements and the web store's frequent changes, the
+    test automation suite becomes brittle and unreliable. Test cases may break frequently,
+    leading to false negatives, reducing the confidence in the automated tests' accuracy.
+
+- Limited Test Coverage:
+
+    The challenges in maintaining the existing test automation suite might limit the scope
+    and coverage of tests for the web store. As a result, important test scenarios and edge
+    cases may be overlooked, leading to potential issues in production.
+
+- Collaboration Difficulties:
+
+    The lack of well-defined targets for element identification and the constant changes in
+    the structure could lead to misunderstandings and communication gaps between testers,
+    developers, and other stakeholders. This might hinder collaboration and lead to a slower
+    feedback loop for addressing issues.
+
+Recommendations:
+
+- Adopt a Robust Element Identification Strategy:
+
+    Invest time and effort into implementing a robust element identification strategy using more
+    stable locators like unique IDs, accessible labels, or logical class names. Utilize tools like
+    data-testid attributes to make element identification more reliable.
+
+- Continuous Monitoring of Test Failures:
+
+    Continuously monitor and analyze test failures to identify patterns and root causes. This proactive
+    approach helps in understanding the impact of UI changes and helps in prioritizing the most critical
+    fixes.
+
+- Collaborate with Developers and QA:
+
+    Foster regular communication and collaboration between developers and QA to stay informed about
+    upcoming changes and ensure early alignment on automation needs.
+
+By addressing these issues and implementing the recommended strategies, the web store's test automation
+process can become more stable, maintainable, and capable of providing valuable feedback on the application's
+quality. It will help the development team to detect issues early in the development lifecycle and deliver
+a more robust and reliable web store to end-users.
